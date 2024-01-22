@@ -43,7 +43,7 @@ const Sidebar = () => {
         <div className="flex-1 h-full">
           <ul className="text-xl ">
             <li className="rounded-xl flex flex-col items-center justify-center ">
-              <span className="text-xl ">Welcome Raj !</span>
+              <span className="text-xl ">Welcome User !</span>
               <span className=" ">Your Saved Prompt 👇</span>
             </li>
           </ul>
