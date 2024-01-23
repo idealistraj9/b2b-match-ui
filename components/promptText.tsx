@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import { Button } from "../components/ui/button";
 import { Textarea } from "./ui/textarea";
 import { Label } from "./ui/label";
@@ -8,13 +7,13 @@ import "../app/globals.css";
 const PromptText = () => {
   return (
     <>
-      <div className="flex m-5">
+      <div className="flex m-2">
         <svg
           viewBox="0 0 1024 1024"
           className="w-7 ml-5"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
-          fill="#000000"
+          fill="#5D5D5D" // Changed color to dark grey
         >
           <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
           <g
@@ -37,25 +36,27 @@ const PromptText = () => {
             ></path>
           </g>
         </svg>
-        <span className="text-foreground font-bold text-[18px]">
+        <span className="text-gray-700 dark:text-gray-400 font-bold text-lg">
           {" "}
           Tip: you can alter the values of x and y to anything !!
         </span>
       </div>
-      <span className="text-3xl m-5 font-bold  pl-6">
-        <h1 className="bg-gradient-to-r p-5  from-green-600 via-violet-900-500 to-violet-700 inline-block text-transparent bg-clip-text">
-          Enter Your Prompt
-        </h1>
-      </span>
-      <div className="flex pl-6 w-11/12 justify-center gap-5 items-center">
+      <div className="flex text-left justify-center w-11/12">
+        <span className="text-3xl font-bold ">
+          <h1 className="bg-gradient-to-r p-1 from-green-600 via-violet-900-500 to-violet-700 inline-block text-transparent bg-clip-text">
+            Enter Your Prompt
+          </h1>
+        </span>
+      </div>
+      <div className="flex pl-6 w-11/12 justify-center items-center">
         <Textarea
           placeholder="Type your message here."
-          rows={5}
-          className="mb-2 text-secondary-foreground bg-card hover:bg-secondary rounded-xl text-xl  w-11/12  p-3 pl-5 pr-14 border-[1px] hover:border-ring outline-none transition-all duration-500"
+          rows={2 }
+          className=" text-secondary-foreground bg-card hover:bg-secondary rounded-xl text-xl w-11/12 border-[1px] hover:border-ring outline-none transition-all duration-500"
         />
-        <Button className=" w-20 bg-primary text-primary-foreground">
+        {/* <Button className="w-20 bg-primary text-primary-foreground">
           Submit
-        </Button>
+        </Button> */}
       </div>
     </>
   );

@@ -12,17 +12,6 @@
       "static/css/app/(start)/layout.css",
       "static/chunks/app/(start)/layout.js"
     ],
-    "/(auth)/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(auth)/layout.css",
-      "static/chunks/app/(auth)/layout.js"
-    ],
-    "/(auth)/login/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(auth)/login/page.js"
-    ],
     "/(pages)/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -34,15 +23,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(pages)/about/page.js"
     ],
-    "/(pages)/imprint/page": [
+    "/(pages)/help/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/imprint/page.js"
+      "static/chunks/app/(pages)/help/page.js"
     ],
-    "/(pages)/data/page": [
+    "/(pages)/price/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/data/page.js"
+      "static/chunks/app/(pages)/price/page.js"
     ],
     "/(pages)/tc/page": [
       "static/chunks/webpack.js",
@@ -54,15 +43,26 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(pages)/contact/page.js"
     ],
-    "/(pages)/help/page": [
+    "/(pages)/imprint/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/help/page.js"
+      "static/chunks/app/(pages)/imprint/page.js"
     ],
-    "/(pages)/price/page": [
+    "/(pages)/data/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/price/page.js"
+      "static/chunks/app/(pages)/data/page.js"
+    ],
+    "/(auth)/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(auth)/layout.css",
+      "static/chunks/app/(auth)/layout.js"
+    ],
+    "/(auth)/login/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(auth)/login/page.js"
     ]
   }
 }

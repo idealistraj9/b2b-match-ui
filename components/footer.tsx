@@ -11,8 +11,8 @@ const Footer = () => {
         rel="stylesheet"
         href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"
       ></link>
-      <footer className="relative bg-secondary  pt-8 pb-6 border-y border-black ">
-        <div className="container mx-auto px-4">
+      <footer className="relative bg-secondary  pt-5 border-y border-black ">
+        <div className="container mx-auto px-2">
           <div className="flex flex-wrap text-left lg:text-left">
             <div className="w-full lg:w-6/12 px-4">
               <h4 className="text-3xl fonat-semibold text-foreground">
@@ -49,7 +49,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="w-full lg:w-6/12 px-4">
-              <div className="flex flex-wrap items-top mb-6">
+              <div className="flex flex-wrap items-top ">
                 <div className="w-full lg:w-4/12 px-4 ml-auto">
                   <span className="block uppercase text-foreground text-sm font-semibold mb-2">
                     Useful Links

@@ -1,4 +1,4 @@
-// File: F:\PROJECT DEC 2023\b2\b2-1\my-app\app\(pages)\help\page.tsx
+// File: F:\PROJECT DEC 2023\b2b-match-ui\app\(pages)\help\page.tsx
 import * as entry from '../../../../../app/(pages)/help/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

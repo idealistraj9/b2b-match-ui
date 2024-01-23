@@ -14,7 +14,7 @@ const Sidebar = () => {
   const { setTheme } = useTheme();
   return (
     <>
-      <div className="flex flex-col  gap-1  w-80  max-h-screen">
+      <div className="flex flex-col  gap-1  w-80  max-h-screen bg-background">
         <div className="flex items-center justify-center ">
           <h2 className="bg-gradient-to-r p-2  from-green-600 via-violet-900-500 to-violet-700 inline-block text-transparent bg-clip-text text-3xl font-bold">
             B2Match.com
@@ -22,7 +22,7 @@ const Sidebar = () => {
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="outline" size="icon">
-                <SunIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+                <SunIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 " />
                 <MoonIcon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
                 <span className="sr-only">Toggle theme</span>
               </Button>
@@ -40,21 +40,22 @@ const Sidebar = () => {
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
+        <div className="flex justify-center items-center text-center">
+          <img src="./logo.jpeg" alt="raj" width={"200px"} />
+        </div>
         <div className="flex-1 h-full">
           <ul className="text-xl ">
             <li className="rounded-xl flex flex-col items-center justify-center ">
-              <span className="text-xl ">Welcome User !</span>
-              <span className=" ">Your Saved Prompt 👇</span>
             </li>
           </ul>
-          <ul className="relative h-1/3 rounded-lg p-5 overflow-x-hidden overflow-y-scroll no-scrollbar ">
+          <ul className="relative h-1/3 rounded-lg  overflow-x-hidden overflow-y-scroll no-scrollbar border-2 border-secondary">
             <li className="rounded-sm hover:bg-secondary transition-all duration-500 cursor-pointer p-1 text-lg m-3  border-gray-400 border-b	">
               {" "}
-              how to cal...{" "}
+              1.how to cal...{" "}
             </li>
             <li className="rounded-sm hover:bg-secondary transition-all duration-500 cursor-pointer p-1 text-lg m-3  border-gray-400 border-b">
               {" "}
-              how to cal...{" "}
+              2.how to cal...{" "}
             </li>
             <li className="rounded-sm hover:bg-secondary transition-all duration-500 cursor-pointer p-1 text-lg m-3  border-gray-400 border-b">
               {" "}
@@ -82,7 +83,7 @@ const Sidebar = () => {
             </li>
           </ul>
           <ul className=" pb-2 text-xl ">
-            <li className="rounded-sm border-b-2 transition-all duration-500 hover:bg-primary p-1 text-lg m-3 ">
+            <li className="rounded-sm border-b-2 transition-all duration-500 hover:bg-secondary p-1 text-lg m-3 ">
               <Link href="/" className="flex items-center space-x-3 rounded-md">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +102,7 @@ const Sidebar = () => {
                 <span>Home</span>
               </Link>
             </li>
-            <li className="rounded-sm border-b-2 transition-all duration-500 hover:bg-primary p-1 text-lg m-3">
+            <li className="rounded-sm border-b-2 transition-all duration-500 hover:bg-secondary p-1 text-lg m-3">
               <Link
                 href="help"
                 className="flex items-center  space-x-3 rounded-md"
@@ -128,12 +129,11 @@ const Sidebar = () => {
                 <span>Help </span>
               </Link>
             </li>
-            <li className="rounded-sm border-b-2 transition-all duration-500 hover:bg-primary p-1 text-lg m-3">
+            <li className="rounded-sm border-b-2 transition-all duration-500 hover:bg-secondary p-1 text-lg m-3">
               <Link
                 href="price"
                 className="flex items-center  space-x-3 rounded-md"
               >
-              
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6"
@@ -142,7 +142,6 @@ const Sidebar = () => {
                   stroke="currentColor"
                   strokeWidth={2}
                 >
-                  
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -152,7 +151,7 @@ const Sidebar = () => {
                 <span>Prices </span>
               </Link>
             </li>
-            <li className="rounded-sm border-b-2 transition-all duration-500 hover:bg-primary p-1 text-lg m-3">
+            <li className="rounded-sm border-b-2 transition-all duration-500 hover:bg-secondary p-1 text-lg m-3">
               <Link
                 href="/login"
                 className="flex items-center  space-x-3 rounded-md"
@@ -186,7 +185,6 @@ const Sidebar = () => {
               should be ready by March 2024. If you already have an inquiry
               today, please contact us. : 044 380 78 88
             </p>
-
           </div>
         </div>
       </div>

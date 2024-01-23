@@ -50,7 +50,7 @@ export default function Main() {
                 customMessage="I am a good boy, my name is Raj."
               />
             </div>
-            <div className="flex flex-col p-3 bg-secondary text-foreground shadow-2xl w-1112 m-3 mt-0 pt-0 scroll-container  ">
+            <div className="flex flex-col p-3 bg-secondary text-foreground shadow-primary shadow-2xl  w-1112 m-3 mt-0 pt-0 scroll-container max-h-60">
               <PromptRes />
             </div>
             <div className="flex flex-col p-3 bg-secondary text-foreground shadow-2xl w-1112 m-3 mt-0 pt-0 scroll-container  ">

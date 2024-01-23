@@ -1,8 +1,10 @@
 {
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/(auth)/login/page": "app/(auth)/login/page.js",
+  "/(start)/page": "app/(start)/page.js",
+  "/(pages)/contact/page": "app/(pages)/contact/page.js",
   "/(pages)/about/page": "app/(pages)/about/page.js",
-  "/(pages)/help/page": "app/(pages)/help/page.js",
+  "/(auth)/login/page": "app/(auth)/login/page.js",
+  "/(pages)/imprint/page": "app/(pages)/imprint/page.js",
   "/(pages)/price/page": "app/(pages)/price/page.js",
-  "/(start)/page": "app/(start)/page.js"
+  "/(pages)/help/page": "app/(pages)/help/page.js"
 }
