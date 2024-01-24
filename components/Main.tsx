@@ -28,32 +28,11 @@ export default function Main() {
                 buttonLink="#"
                 customMessage="This is a  message for Title.This is a  message for Title"
               />
-              <TextCard
-                title="Title"
-                description=""
-                buttonText="Learn More"
-                buttonLink="#"
-                customMessage="This is a custom message for Title."
-              />
-              <TextCard
-                title="Title"
-                description=""
-                buttonText="Learn More"
-                buttonLink="#"
-                customMessage="This is a custom message for Title."
-              />
-              <TextCard
-                title="Title"
-                description=""
-                buttonText="Learn More"
-                buttonLink="#"
-                customMessage="I am a good boy, my name is Raj."
-              />
             </div>
-            <div className="flex flex-col p-3 bg-secondary text-foreground shadow-primary shadow-2xl  w-1112 m-3 mt-0 pt-0 scroll-container max-h-60">
+            <div className="flex flex-col p-3 bg-secondary text-foreground shadow-primary shadow-2xl  w-full m-3 mt-0 pt-0 scroll-container">
               <PromptRes />
-            </div>
-            <div className="flex flex-col p-3 bg-secondary text-foreground shadow-2xl w-1112 m-3 mt-0 pt-0 scroll-container  ">
+              {/* </div>
+                <div className="flex flex-col p-3 bg-secondary text-foreground shadow-2xl w-1112 m-3 mt-0 pt-0 scroll-container  "> */}
               <PromptGraph />
             </div>
             <Footer />

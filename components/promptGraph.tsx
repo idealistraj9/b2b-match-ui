@@ -5,8 +5,8 @@ import { Button } from "../components/ui/button";
 const PromptGrph = () => {
   return (
     <>
-      <div className="w-full rounded-lg p-5 flex ">
-        <img src="/graph1.jpg" alt="" className="w-3/4 rounded-lg mr-3" />
+      <div className="w-full rounded-lg p-3 flex pt-0  text-lg">
+        <img src="/graph1.jpg" alt="" className="w-9/12 rounded-lg mr-3" />
         <div className="bg-card w-full rounded-lg p-5">
           <ol className="list-decimal">
             <b>

@@ -16,10 +16,10 @@ const Sidebar = () => {
     <>
       <div className="flex flex-col  gap-1  w-80  max-h-screen bg-background">
         <div className="flex items-center justify-center ">
-          <h2 className="bg-gradient-to-r p-2  from-green-600 via-violet-900-500 to-violet-700 inline-block text-transparent bg-clip-text text-3xl font-bold">
-            B2Match.com
-          </h2>
-          <DropdownMenu>
+          <div className="flex justify-center items-center text-center">
+            <img src="./logo.jpeg" alt="raj" width={"200px"} className="m-3 mix-blend-color-burn"/>
+          </div>
+          {/* <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="outline" size="icon">
                 <SunIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 " />
@@ -38,17 +38,13 @@ const Sidebar = () => {
                 System
               </DropdownMenuItem>
             </DropdownMenuContent>
-          </DropdownMenu>
-        </div>
-        <div className="flex justify-center items-center text-center">
-          <img src="./logo.jpeg" alt="raj" width={"200px"} />
+          </DropdownMenu> */}
         </div>
         <div className="flex-1 h-full">
           <ul className="text-xl ">
-            <li className="rounded-xl flex flex-col items-center justify-center ">
-            </li>
+            <li className="rounded-xl flex flex-col items-center justify-center "></li>
           </ul>
-          <ul className="relative h-1/3 rounded-lg  overflow-x-hidden overflow-y-scroll no-scrollbar border-2 border-secondary">
+          {/* <ul className="relative h-1/3 rounded-lg  overflow-x-hidden overflow-y-scroll no-scrollbar border-2 border-secondary">
             <li className="rounded-sm hover:bg-secondary transition-all duration-500 cursor-pointer p-1 text-lg m-3  border-gray-400 border-b	">
               {" "}
               1.how to cal...{" "}
@@ -81,7 +77,7 @@ const Sidebar = () => {
               {" "}
               how to cal...{" "}
             </li>
-          </ul>
+          </ul> */}
           <ul className=" pb-2 text-xl ">
             <li className="rounded-sm border-b-2 transition-all duration-500 hover:bg-secondary p-1 text-lg m-3 ">
               <Link href="/" className="flex items-center space-x-3 rounded-md">
