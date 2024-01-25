@@ -18,15 +18,15 @@ export default function RootLayout({
           />
           <title>Document</title>
         </head>
-        <body className="bg-gray-50 dark:bg-gray-900">
+        <body className="">
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
           >
-            <div className="flex bg-gray-50 dark:bg-gray-900 justify-center items-center self-center">
-              <main className="flex p-4 bg-gray-50 dark:bg-gray-900 justify-center items-center self-center">
+            <div className="flex  justify-center items-center self-center">
+              <main className="flex p-4  justify-center items-center self-center">
                 {children}
               </main>
             </div>

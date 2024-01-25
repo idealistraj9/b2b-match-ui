@@ -6,7 +6,6 @@ const PromptRes = () => {
   return (
     <>
       <div className="flex flex-col w-full rounded-lg p-3">
-        
         <div className=" w-full rounded-lg p-3 bg-popover text-lg max-h-32 overflow-auto">
           <p className="text-gray-700 dark:text-gray-400 ">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi,

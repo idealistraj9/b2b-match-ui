@@ -18,9 +18,9 @@ export default function Main() {
             "flex w-full font-sans antialiased bg-secondary text-foreground text-xl overflow-hidden"
           )}
         >
-          <div className="overflow-y-scroll overflow-x-hidden relative max-h-lvh">
-            <PromptText />
-            <div className="w-11/12  ml-10 rounded-lg flex flex-row ">
+          <div className="overflow-y-scroll overflow-x-hidden relative max-h-lvh ">
+            <div className="w-10/12  rounded-lg flex flex-col p-4">
+              <PromptText />
               <TextCard
                 title="Title"
                 description=""
@@ -28,11 +28,7 @@ export default function Main() {
                 buttonLink="#"
                 customMessage="This is a  message for Title.This is a  message for Title"
               />
-            </div>
-            <div className="flex flex-col p-3 bg-secondary text-foreground shadow-primary shadow-2xl  w-full m-3 mt-0 pt-0 scroll-container">
               <PromptRes />
-              {/* </div>
-                <div className="flex flex-col p-3 bg-secondary text-foreground shadow-2xl w-1112 m-3 mt-0 pt-0 scroll-container  "> */}
               <PromptGraph />
             </div>
             <Footer />

@@ -7,28 +7,29 @@ import "../app/globals.css";
 const PromptText = () => {
   return (
     <>
-      <div className="flex m-2"></div>
-      <div className="flex text-left justify-center w-11/12">
-        <span className="text-3xl font-bold ">
-          <h1 className="bg-gradient-to-r p-1 from-green-600 via-violet-900-500 to-violet-700 inline-block text-transparent bg-clip-text">
-            Enter Your Prompt
-          </h1>
-        </span>
-      </div>
-      <div className="flex ml-14 w-11/12 justify-center items-center">
+      <div className="flex w-11/12 justify-center items-center ml-2">
         <Textarea
           placeholder="Type your message here."
           rows={1}
-          className=" text-secondary-foreground bg-card hover:bg-secondary rounded-xl text-xl w-11/12 border-[1px] hover:border-ring outline-none transition-all duration-500"
+          className="pl-4 text-secondary-foreground bg-card hover:bg-secondary rounded-xl text-lg w-11/12 border-[1px] hover:border-ring outline-none transition-all duration-500"
         />
         <div className="flex flex-col m-2 w-34">
-          <Button variant={"ghost"} className="bg-primary text-secondary p-1">
-            Save 
+          <Button
+            variant={"outline"}
+            className="bg-primary text-secondary text-sm h-7 border-white border "
+          >
+            Save
           </Button>
-          <Button variant={"outline"} className="bg-primary text-secondary ">
-            New 
+          <Button
+            variant={"outline"}
+            className="bg-primary text-secondary h-7 border-white border"
+          >
+            New
           </Button>
-          <Button variant={"outline"} className="bg-primary text-secondary ">
+          <Button
+            variant={"outline"}
+            className="bg-primary text-secondary h-7 border-white border"
+          >
             Submit
           </Button>
         </div>

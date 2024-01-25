@@ -14,11 +14,11 @@ export default function Home() {
   return (
     <>
       <div className="bg-secondary p-10 pt-3 flex flex-col text-center justify-center h-screen overflow-auto">
-      <span className="text-5xl mt-5 font-bold  pl-6">
-        <h1 className="bg-gradient-to-r p-5  from-green-600 via-violet-900-500 to-violet-700 inline-block text-transparent bg-clip-text">
-          About Us
-        </h1>
-      </span>
+        <span className="text-5xl mt-5 font-bold  pl-6">
+          <h1 className="bg-gradient-to-r p-5  from-green-600 via-violet-900-500 to-violet-700 inline-block text-transparent bg-clip-text">
+            About Us
+          </h1>
+        </span>
         <div className="bg-secondary flex justify-center items-center m-3 rounded-sm border-background mt-3 pt-0">
           <Card className="flex w-2/4 m-5 p-10 items-center text-center justify-center flex-col shadow-none bg-secondary border-none">
             <img src="./about.jpg" alt="" className="rounded-full" />

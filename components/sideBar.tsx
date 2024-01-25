@@ -86,15 +86,24 @@ const Sidebar = () => {
           <ul className=" pb-2 text-xl pl-2 pr-5">
             <li className="rounded-sm border-b-2 transition-all duration-500 hover:bg-secondary p-1 text-lg m-3 ">
               <Link href="/" className="flex items-center space-x-3 rounded-md">
-                <span>Home</span>
+                <span>Search</span>
               </Link>
             </li>
-            <li className="rounded-sm border-b-2 transition-all duration-500 hover:bg-secondary p-1 text-lg m-3 ">
+
+            <li className="rounded-sm border-b-2 transition-all duration-500 hover:bg-secondary p-1 text-lg m-3">
               <Link
-                href="/search"
-                className="flex items-center space-x-3 rounded-md"
+                href="price"
+                className="flex items-center  space-x-3 rounded-md"
               >
-                <span>Search</span>
+                <span>Prices </span>
+              </Link>
+            </li>
+            <li className="rounded-sm border-b-2 transition-all duration-500 hover:bg-secondary p-1 text-lg m-3">
+              <Link
+                href="/library"
+                className="flex items-center  space-x-3 rounded-md"
+              >
+                <span>Library</span>
               </Link>
             </li>
             <li className="rounded-sm border-b-2 transition-all duration-500 hover:bg-secondary p-1 text-lg m-3">
@@ -107,20 +116,13 @@ const Sidebar = () => {
             </li>
             <li className="rounded-sm border-b-2 transition-all duration-500 hover:bg-secondary p-1 text-lg m-3">
               <Link
-                href="price"
-                className="flex items-center  space-x-3 rounded-md"
-              >
-                <span>Prices </span>
-              </Link>
-            </li>
-            <li className="rounded-sm border-b-2 transition-all duration-500 hover:bg-secondary p-1 text-lg m-3">
-              <Link
                 href="/login"
                 className="flex items-center  space-x-3 rounded-md"
               >
-                <span>Logout</span>
+                <span>Register</span>
               </Link>
             </li>
+            
           </ul>
           <div className="flex flex-col text-center justify-center">
             <span className="text-xl ">INFORMATION</span>
