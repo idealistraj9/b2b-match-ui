@@ -16,13 +16,15 @@ const Sidebar = () => {
     <>
       <div className="flex flex-col  gap-1  w-80  max-h-screen bg-background">
         <div className="flex items-center justify-center ">
-          <div className="flex justify-center items-center text-center">
+          <div className="flex flex-col justify-center items-center text-center">
             <img
               src="./logo.jpeg"
               alt="raj"
               width={"200px"}
               className="m-3 mix-blend-color-burn"
             />
+            <h1 className="text-2xl bg-gradient-to-r from-green-600 via-violet-900-500 to-green-950 text-transparent bg-clip-text">Welcome Username</h1>
+            <h1 className="text-2xl bg-gradient-to-r from-green-600 via-violet-900-500 to-green-950 text-transparent bg-clip-text">(show if logged)</h1>
           </div>
           {/* <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -89,7 +91,14 @@ const Sidebar = () => {
                 <span>Search</span>
               </Link>
             </li>
-
+            <li className="rounded-sm border-b-2 transition-all duration-500 hover:bg-secondary p-1 text-lg m-3">
+              <Link
+                href="history"
+                className="flex items-center  space-x-3 rounded-md"
+              >
+                <span>History </span>
+              </Link>
+            </li>
             <li className="rounded-sm border-b-2 transition-all duration-500 hover:bg-secondary p-1 text-lg m-3">
               <Link
                 href="price"
@@ -122,7 +131,6 @@ const Sidebar = () => {
                 <span>Register</span>
               </Link>
             </li>
-            
           </ul>
           <div className="flex flex-col text-center justify-center">
             <span className="text-xl ">INFORMATION</span>

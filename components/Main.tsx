@@ -19,7 +19,7 @@ export default function Main() {
           )}
         >
           <div className="overflow-y-scroll overflow-x-hidden relative max-h-lvh ">
-            <div className="w-10/12  rounded-lg flex flex-col p-4">
+            <div className="w-11/12  rounded-lg flex flex-col p-4">
               <PromptText />
               <TextCard
                 title="Title"

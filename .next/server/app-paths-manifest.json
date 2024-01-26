@@ -1,4 +1,9 @@
 {
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/(start)/page": "app/(start)/page.js"
+  "/(start)/page": "app/(start)/page.js",
+  "/(pages)/library/page": "app/(pages)/library/page.js",
+  "/(pages)/about/page": "app/(pages)/about/page.js",
+  "/(auth)/login/page": "app/(auth)/login/page.js",
+  "/(pages)/imprint/page": "app/(pages)/imprint/page.js",
+  "/(pages)/contact/page": "app/(pages)/contact/page.js"
 }
