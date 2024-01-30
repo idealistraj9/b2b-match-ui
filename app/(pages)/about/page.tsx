@@ -1,3 +1,4 @@
+"use client";
 import * as React from "react";
 import {
   Card,
@@ -7,15 +8,54 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-
+import { useEffect, useState } from "react";
 import Footer from "@/components/footer";
 
+async function fetchHtmlContent() {
+  const repoOwner = "idealistraj9";
+  const repoName = "b2Match-gui";
+  const filePath = "aboutus.html"; // Update with the actual path
+
+  const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}`;
+
+  try {
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+
+    // Use the 'content' property directly for HTML content
+    const base64Content = data.content;
+
+    // Decode base64 content
+    const htmlContent = atob(base64Content);
+
+    return htmlContent;
+  } catch (error) {
+    console.error("Error fetching HTML content:", error);
+    return null;
+  }
+}
+
 export default function Home() {
+  const [htmlContent, setHtmlContent] = useState("");
+
+  useEffect(() => {
+    // Call the fetchHtmlContent function when the component is mounted
+    const fetchData = async () => {
+      const content = await fetchHtmlContent();
+      if (content) {
+        console.log("HTML Content:", content);
+        setHtmlContent(content);
+        // Update your component state or do something with the HTML content
+      }
+    };
+
+    fetchData();
+  }, []);
   return (
     <>
-      <div className="bg-secondary p-10 pt-3 flex flex-col text-center justify-center h-screen overflow-auto">
-        <span className="text-5xl mt-5 font-bold  pl-6">
-          <h1 className="bg-gradient-to-r from-green-600 via-violet-900-500 to-green-950 inline-block text-transparent bg-clip-text">
+      <div className="bg-secondary flex flex-col text-center justify-center h-screen overflow-auto ">
+        {/* <span className="text-5xl mt-5 font-bold  pl-6">
+          <h1 className="bg-gradient-to-r from-green-600 to-green-950 inline-block text-transparent bg-clip-text">
             About Us
           </h1>
         </span>
@@ -47,7 +87,8 @@ export default function Home() {
               can search independently and without our help.
             </CardDescription>
           </Card>
-        </div>
+        </div> */}
+        <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
         <Footer />
       </div>
     </>

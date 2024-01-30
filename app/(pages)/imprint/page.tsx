@@ -1,3 +1,4 @@
+"use client";
 import * as React from "react";
 import {
   Card,
@@ -7,42 +8,53 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-
+import { useEffect, useState } from "react";
 import Footer from "@/components/footer";
 
-export default function Imprint() {
+async function fetchHtmlContent() {
+  const repoOwner = "idealistraj9";
+  const repoName = "b2Match-gui";
+  const filePath = "imprint.html"; // Update with the actual path
+
+  const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}`;
+
+  try {
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+
+    // Use the 'content' property directly for HTML content
+    const base64Content = data.content;
+
+    // Decode base64 content
+    const htmlContent = atob(base64Content);
+
+    return htmlContent;
+  } catch (error) {
+    console.error("Error fetching HTML content:", error);
+    return null;
+  }
+}
+
+export default function Home() {
+  const [htmlContent, setHtmlContent] = useState("");
+
+  useEffect(() => {
+    // Call the fetchHtmlContent function when the component is mounted
+    const fetchData = async () => {
+      const content = await fetchHtmlContent();
+      if (content) {
+        console.log("HTML Content:", content);
+        setHtmlContent(content);
+        // Update your component state or do something with the HTML content
+      }
+    };
+
+    fetchData();
+  }, []);
   return (
     <>
-      <div className="bg-secondary p-10 pt-3 flex flex-col text-center justify-center h-screen overflow-auto">
-        <span className="text-5xl mt-5 font-bold  pl-6">
-          <h1 className="bg-gradient-to-r from-green-600 via-violet-900-500 to-green-950 inline-block text-transparent bg-clip-text">
-            Imprint
-          </h1>
-        </span>
-        <div className="bg-secondary flex justify-center items-center m-3 rounded-sm border-background mt-3 pt-0">
-          <Card className="flex w-2/4 m-5 p-10 flex-col text-left bg-secondary border-none shadow-none">
-            <CardTitle className="text-xl">Contact</CardTitle>
-            <CardDescription className="text-[20px]">
-              BildKom International GmbH
-              <br />
-              Hardgutstrasse 28, 8048 Zurich
-              <br />
-              UID: CHE-112.192.208
-              <br />
-              Telephone: 044 380 78 88
-              <br />
-              Email: bkcontact@bildkom.com
-              <br />
-              Website: <a href="https://bildkom.com/">https://bildkom.com/</a>
-            </CardDescription>
-            <CardTitle className="mt-5 text-xl">
-              Authorized representative
-            </CardTitle>
-            <CardDescription className="text-[20px]">
-              Dr. Patrik Zwahlen (owner and managing director)
-            </CardDescription>
-          </Card>
-        </div>
+      <div className="bg-secondary flex flex-col text-center justify-center h-screen overflow-auto ">
+        <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
         <Footer />
       </div>
     </>
