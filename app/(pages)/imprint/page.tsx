@@ -15,7 +15,7 @@ export default function Imprint() {
     <>
       <div className="bg-secondary p-10 pt-3 flex flex-col text-center justify-center h-screen overflow-auto">
         <span className="text-5xl mt-5 font-bold  pl-6">
-          <h1 className="bg-gradient-to-r p-5  from-green-600 via-violet-900-500 to-violet-700 inline-block text-transparent bg-clip-text">
+          <h1 className="bg-gradient-to-r from-green-600 via-violet-900-500 to-green-950 inline-block text-transparent bg-clip-text">
             Imprint
           </h1>
         </span>

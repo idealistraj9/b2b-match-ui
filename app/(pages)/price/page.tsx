@@ -15,26 +15,26 @@ import Footer from "@/components/footer";
 export default function GTC() {
   return (
     <>
-      <div className="bg-secondary flex flex-col text-center justify-center">
+      <div className="bg-secondary flex flex-col text-center justify-center items-center">
         <div className="w-full  max-h-screen overflow-auto">
           <span className="text-5xl mt-5 font-bold pl-6">
-            <h1 className="bg-gradient-to-r p-5 from-green-600 via-violet-900-500 to-violet-700 inline-block text-transparent bg-clip-text">
+            <h1 className="bg-gradient-to-r from-green-600 via-violet-900-500 to-green-950 inline-block text-transparent bg-clip-text mt-3">
               Services
             </h1>
           </span>
-          <div className="ml-52 h-[500px]">
-            <Tabs defaultValue="CH-de addresses" className="w-[1000px] m-10 text-xl">
-              <TabsList className="grid w-full grid-cols-4 mb-5">
-                <TabsTrigger className="text-xl " value="CH-de addresses" default>
+          <div className="h-fit flex justify-center items-center w-fit p-40 ml-24">
+            <Tabs defaultValue="CH-de addresses" className="w-[1000px]  text-xl">
+              <TabsList className="grid w-full grid-cols-4 mb-2">
+                <TabsTrigger className="text-lg p-0  " value="CH-de addresses" >
                   CH-de addresses
                 </TabsTrigger>
-                <TabsTrigger className="text-xl" value="Sale of company">
+                <TabsTrigger className="text-lg p-0 " value="Sale of company">
                   Sale of company
                 </TabsTrigger>
-                <TabsTrigger className="text-xl" value="Market analysis">
+                <TabsTrigger className="text-lg p-0 " value="Market analysis">
                   Market analysis
                 </TabsTrigger>
-                <TabsTrigger className="text-xl" value="Customer value (analysis)">
+                <TabsTrigger className="text-lg p-0 " value="Customer value (analysis)">
                   Customer value (analysis)
                 </TabsTrigger>
               </TabsList>

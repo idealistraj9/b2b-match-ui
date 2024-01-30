@@ -7,11 +7,11 @@ export default function HelpPage() {
     <>
       <div className="bg-secondary p-10 pt-3 flex flex-col text-center justify-center h-screen overflow-auto">
         <span className="text-5xl font-bold  pl-6">
-          <h1 className="bg-gradient-to-r p-5  from-green-600 via-violet-900-500 to-violet-700 inline-block text-transparent bg-clip-text">
+          <h1 className="bg-gradient-to-r from-green-600 via-violet-900-500 to-green-950 inline-block text-transparent bg-clip-text">
             Help and Explanations
           </h1>
         </span>
-        <div className="bg-secondary flex justify-center items-center m-3 rounded-sm border-background mt-3 pt-0">
+        <div className="bg-secondary flex justify-center  m-1 rounded-sm border-background mt-3 pt-0">
           <Card className="flex w-2/4 m-5 p-10 flex-col text-left bg-secondary border-none shadow-none">
             <h1 className="text-2xl font-bold mt-5 ">
               Architects, Canton of St. Gallen
@@ -19,7 +19,7 @@ export default function HelpPage() {
             <CardTitle className="mt-5 text-xl">
               Semantic search (meaning)
             </CardTitle>
-            <CardDescription className="text-[20px]">
+            <CardDescription className="text-[18px]">
               We are a school in St. Gallen and want to renovate a gymnasium.
               The project must be publicly advertised. We expect a construction
               volume of CHF 6 million. We are looking for private individuals or
@@ -31,7 +31,7 @@ export default function HelpPage() {
             <CardTitle className="mt-5 text-xl">
               Keyword search results
             </CardTitle>
-            <CardDescription className="text-[20px]">
+            <CardDescription className="text-[18px]">
               Keyword search results In a keyword search, the terms must be at
               least partially present. An office community with twenty
               successful projects that have their offices 50 meters from the
@@ -42,7 +42,7 @@ export default function HelpPage() {
             <CardTitle className="mt-5 text-xl">
               Semantic search results
             </CardTitle>
-            <CardDescription className="text-[20px]">
+            <CardDescription className="text-[18px]">
               In a semantic search, the search query is formulated in a natural
               way. The artificial intelligence “understands” the query and
               provides much more accurate results than a keyword search.

@@ -17,14 +17,22 @@ const Sidebar = () => {
       <div className="flex flex-col  gap-1  w-80  max-h-screen bg-background">
         <div className="flex items-center justify-center ">
           <div className="flex flex-col justify-center items-center text-center">
-            <img
+            {/* <img
               src="./logo.jpeg"
               alt="raj"
               width={"200px"}
               className="m-3 mix-blend-color-burn"
-            />
-            <h1 className="text-2xl bg-gradient-to-r from-green-600 via-violet-900-500 to-green-950 text-transparent bg-clip-text">Welcome Username</h1>
-            <h1 className="text-2xl bg-gradient-to-r from-green-600 via-violet-900-500 to-green-950 text-transparent bg-clip-text">(show if logged)</h1>
+            /> */}
+            
+            <h1 className="text-3xl font-bold mt-3 bg-gradient-to-r from-green-600 via-violet-900-500 to-green-950 text-transparent bg-clip-text">
+              B2bMatch
+            </h1>
+            <h1 className="text-xl font-bold mt-3 bg-gradient-to-r from-green-600 via-violet-900-500 to-green-950 text-transparent bg-clip-text">
+              Welcome Username
+            </h1>
+            <h1 className="text-xl font-bold  bg-gradient-to-r from-green-600 via-violet-900-500 to-green-950 text-transparent bg-clip-text">
+              (show only if logged)
+            </h1>
           </div>
           {/* <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -89,14 +97,6 @@ const Sidebar = () => {
             <li className="rounded-sm border-b-2 transition-all duration-500 hover:bg-secondary p-1 text-lg m-3 ">
               <Link href="/" className="flex items-center space-x-3 rounded-md">
                 <span>Search</span>
-              </Link>
-            </li>
-            <li className="rounded-sm border-b-2 transition-all duration-500 hover:bg-secondary p-1 text-lg m-3">
-              <Link
-                href="history"
-                className="flex items-center  space-x-3 rounded-md"
-              >
-                <span>History </span>
               </Link>
             </li>
             <li className="rounded-sm border-b-2 transition-all duration-500 hover:bg-secondary p-1 text-lg m-3">

@@ -23,7 +23,7 @@ const TextCard: React.FC<TextCardProps> = ({
   customMessage,
 }) => {
   return (
-    <div className="p-2 drop-shadow-lg  w-full ">
+    <div className="pt-1 pb-1 drop-shadow-lg  w-full ">
       <div className=" flex rounded-lg h-fit bg-card p-3 flex-col hover:bg-secondary  text-foreground border-b-4 hover:border-primary shadow-md hover:shadow-primary">
         <h2 className="text-foreground  text-lg font-medium">Tips</h2>
         <div className="flex flex-col justify-between flex-grow">

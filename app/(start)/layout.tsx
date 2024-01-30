@@ -2,7 +2,6 @@
 "use client";
 import Sidebar from "@/components/sideBar";
 import "../globals.css";
-import { ThemeProvider } from "@/components/ui/theme-provider";
 
 export default function RootLayout({
   children,
@@ -14,18 +13,10 @@ export default function RootLayout({
       <html lang="en" suppressHydrationWarning>
         <head />
         <body className="overflow-hidden ">
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <div className="flex">
-
+          <div className="flex">
             <Sidebar />
             <div className="flex-1">{children}</div>
-            </div>
-          </ThemeProvider>
+          </div>
         </body>
       </html>
     </>

@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import "../globals.css";
-import { ThemeProvider } from "@/components/ui/theme-provider";
 export default function RootLayout({
   children,
 }: {
@@ -19,18 +18,11 @@ export default function RootLayout({
           <title>Document</title>
         </head>
         <body className="">
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <div className="flex  justify-center items-center self-center">
-              <main className="flex p-4  justify-center items-center self-center">
-                {children}
-              </main>
-            </div>
-          </ThemeProvider>
+          <div className="flex  justify-center items-center self-center">
+            <main className="flex p-4  justify-center items-center self-center">
+              {children}
+            </main>
+          </div>
         </body>
       </html>
     </>

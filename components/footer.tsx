@@ -60,15 +60,15 @@ const Footer = () => {
             <div className="text-sm text-blueGray-500 font-semibold py-1">
               Copyright © <span id="get-current-year">2024</span>
               <a
-                href="https://www.creative-tim.com/product/notus-js"
+                href="/"
                 className="text-blueGray-500 hover:text-gray-800"
-                target="_blank"
+                target=""
               >
                 {" "}
                 Design by{" "}
               </a>
               <a
-                href="https://www.creative-tim.com?ref=njs-profile"
+                href="/"
                 className="text-blueGray-500 hover:text-blueGray-800"
               >
                 B2bmatch.ch

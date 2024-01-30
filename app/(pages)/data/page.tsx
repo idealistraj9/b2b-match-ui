@@ -14,15 +14,15 @@ export default function GTC() {
       <div className="bg-secondary flex flex-col text-center justify-center">
         <div className="w-fit max-h-screen overflow-auto">
           <span className="text-5xl mt-5 font-bold pl-6">
-            <h1 className="bg-gradient-to-r p-5 from-green-600 via-violet-900-500 to-violet-700 inline-block text-transparent bg-clip-text">
+            <h1 className="bg-gradient-to-r from-green-600 via-violet-900-500 to-green-950 inline-block text-transparent bg-clip-text mt-3">
               Data Protection
             </h1>
           </span>
-          <div className="bg-secondary flex flex-grow justify-center items-center m-3 rounded-sm border-background mt-3 pt-0">
+          <div className="bg-secondary flex flex-grow justify-center rounded-sm border-background mt-1 pt-0">
             <Card className="flex w-2/4 m-5 p-10 flex-col text-left bg-secondary border-none shadow-none">
               {/* ... (Previous content) ... */}
               <CardTitle className="mt-5 text-xl">Data Protection</CardTitle>
-              <CardDescription className="text-[20px]">
+              <CardDescription className="text-[18px]">
                 We, BildKom International GmbH, take the protection of your
                 personal data very seriously and adhere to the rules of data
                 protection laws. In this privacy policy, we inform you about
@@ -32,41 +32,41 @@ export default function GTC() {
               <CardTitle className="mt-5 text-xl">
                 1. Collection and processing of personal data
               </CardTitle>
-              <CardDescription className="text-[20px]">
+              <CardDescription className="text-[18px]">
                 Personal data is any information that relates to an identified
                 or identifiable natural person. We collect and process personal
                 data from you when you visit our website or use our services.
                 The type and extent of data collected depend on how you use our
                 website and which services you order from us.
               </CardDescription>
-              <CardDescription className="text-[20px]">
+              <CardDescription className="text-[18px]">
                 When you visit our website, we temporarily store the following
                 data in a log file:
               </CardDescription>
-              <ul className="list-disc list-inside m-3 text-[20px]">
+              <ul className="list-disc list-inside m-3 text-[18px]">
                 <li>Your IP address</li>
                 <li>Date and time of your visit</li>
                 <li>The page or file you accessed</li>
                 <li>The browser and operating system used</li>
                 <li>The website from which you came to us</li>
               </ul>
-              <CardDescription className="text-[20px]">
+              <CardDescription className="text-[18px]">
                 This data is collected for technical reasons to ensure the
                 functionality and security of our website. We do not use this
                 data to draw conclusions about you personally. The data will be
                 deleted after seven days at the latest.
               </CardDescription>
-              <CardDescription className="text-[20px]">
+              <CardDescription className="text-[18px]">
                 If you would like to order addresses from us, you must provide
                 us with the following information:
               </CardDescription>
-              <ul className="list-disc list-inside m-3 text-[20px]">
+              <ul className="list-disc list-inside m-3 text-[18px]">
                 <li>Your name</li>
                 <li>Your email address</li>
                 <li> Your billing address</li>
                 <li>The desired addresses</li>
               </ul>
-              <CardDescription className="text-[20px]">
+              <CardDescription className="text-[18px]">
                 We use this data exclusively to process your order. We store
                 this data for as long as necessary to fulfill our contractual
                 and legal obligations. The data is then deleted or anonymized.
@@ -74,7 +74,7 @@ export default function GTC() {
               <CardTitle className="mt-5 text-xl">
                 2. Disclosure of personal data to third parties
               </CardTitle>
-              <CardDescription className="text-[20px]">
+              <CardDescription className="text-[18px]">
                 We will not pass on your personal data to third parties unless
                 you have given us your express consent to do so or we are
                 legally obliged or entitled to do so. However, we reserve the
@@ -83,8 +83,10 @@ export default function GTC() {
                 contractually bound to our instructions and are subject to the
                 same data protection standards as we are.
               </CardDescription>
+            </Card>
+            <Card className="flex w-2/4 m-5 p-10 flex-col text-left bg-secondary border-none shadow-none">
               <CardTitle className="mt-5 text-xl">3. Cookies</CardTitle>
-              <CardDescription className="text-[20px]">
+              <CardDescription className="text-[18px]">
                 Cookies are small text files that are stored on your computer
                 when you visit a website. Cookies are used to facilitate or
                 personalize the use of a website. We only use cookies to the
@@ -96,7 +98,7 @@ export default function GTC() {
                 only be available to a limited extent if you reject cookies.
               </CardDescription>
               <CardTitle className="mt-5 text-xl">4. Your rights</CardTitle>
-              <CardDescription className="text-[20px]">
+              <CardDescription className="text-[18px]">
                 You have the right to request information from us at any time
                 about the personal data stored about you. You also have the
                 right to request the correction or deletion of your personal
@@ -108,14 +110,14 @@ export default function GTC() {
                 machine-readable format or to transmit it to another person
                 responsible.
               </CardDescription>
-              <CardDescription className="text-[20px]">
+              <CardDescription className="text-[18px]">
                 To exercise your rights, you can contact us at:
               </CardDescription>
               <h1 className="mt-5">BildKom International</h1>
               <h1> GmbH Hardgutstrasse 28 </h1>
               <h1>8048 Zurich</h1>
               <h1>Email: bkcontact@bildkom.com</h1>
-              <CardDescription className="text-[20px]">
+              <CardDescription className="text-[18px]">
                 You also have the right to lodge a complaint with the relevant
                 data protection authority if you believe that the processing of
                 your personal data violates data protection law.
@@ -123,7 +125,7 @@ export default function GTC() {
               <CardTitle className="mt-5 text-xl">
                 5. Changes to this privacy policy
               </CardTitle>
-              <CardDescription className="text-[20px]">
+              <CardDescription className="text-[18px]">
                 We reserve the right to change this privacy policy at any time.
                 You can find the current version on our website. We recommend
                 that you read this privacy policy regularly to stay informed
