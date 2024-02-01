@@ -10,7 +10,7 @@ import {
 import Footer from "@/components/footer";
 async function fetchHtmlContent() {
   const repoOwner = "preet665";
-  const repoName = "b2b-match-ui-final";
+  const repoName = "b2b-match-ui-docs";
   const filePath = "data.html"; // Update with the actual path
 
   const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}`;

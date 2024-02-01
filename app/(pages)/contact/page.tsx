@@ -15,7 +15,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 async function fetchHtmlContent() {
   const repoOwner = "preet665";
-  const repoName = "b2b-match-ui-final";
+  const repoName = "b2b-match-ui-docs";
   const filePath = "contact.html"; // Update with the actual path
 
   const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}`;
