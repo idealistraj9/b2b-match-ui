@@ -43,6 +43,26 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(auth)/login/page.js"
+    ],
+    "/(pages)/about/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/about/page.js"
+    ],
+    "/(pages)/imprint/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/imprint/page.js"
+    ],
+    "/(pages)/data/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/data/page.js"
+    ],
+    "/(pages)/contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/contact/page.js"
     ]
   }
 }
