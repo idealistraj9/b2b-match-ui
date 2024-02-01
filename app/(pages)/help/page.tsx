@@ -1,17 +1,56 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Footer from "@/components/footer";
 import { Card, CardDescription, CardTitle } from "@/components/ui/card";
+async function fetchHtmlContent() {
+  const repoOwner = "idealistraj9";
+  const repoName = "b2Match-gui";
+  const filePath = "help.html"; // Update with the actual path
 
+  const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}`;
+
+  try {
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+
+    // Use the 'content' property directly for HTML content
+    const base64Content = data.content;
+
+    // Decode base64 content
+    const htmlContent = atob(base64Content);
+
+    return htmlContent;
+  } catch (error) {
+    console.error("Error fetching HTML content:", error);
+    return null;
+  }
+}
 export default function HelpPage() {
+  const [htmlContent, setHtmlContent] = useState("");
+
+  useEffect(() => {
+    // Call the fetchHtmlContent function when the component is mounted
+    const fetchData = async () => {
+      const content = await fetchHtmlContent();
+      if (content) {
+        console.log("HTML Content:", content);
+        setHtmlContent(content);
+        // Update your component state or do something with the HTML content
+      }
+    };
+
+    fetchData();
+  }, []);
   return (
     <>
       <div className="bg-secondary p-10 pt-3 flex flex-col text-center justify-center h-screen overflow-auto">
+        
+        {/* <div className="bg-secondary flex justify-center  m-1 rounded-sm border-background mt-3 pt-0">
         <span className="text-5xl font-bold  pl-6">
           <h1 className="bg-gradient-to-r from-green-600 via-violet-900-500 to-green-950 inline-block text-transparent bg-clip-text">
             Help and Explanations
           </h1>
         </span>
-        <div className="bg-secondary flex justify-center  m-1 rounded-sm border-background mt-3 pt-0">
           <Card className="flex w-2/4 m-5 p-10 flex-col text-left bg-secondary border-none shadow-none">
             <h1 className="text-2xl font-bold mt-5 ">
               Architects, Canton of St. Gallen
@@ -54,7 +93,9 @@ export default function HelpPage() {
               </b>
             </h1>
           </Card>
-        </div>
+        </div> */}
+        <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+
         <Footer />
       </div>
     </>

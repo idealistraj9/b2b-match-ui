@@ -12,51 +12,26 @@
       "static/css/app/(start)/layout.css",
       "static/chunks/app/(start)/layout.js"
     ],
+    "/(pages)/price/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/price/page.js"
+    ],
     "/(pages)/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/(pages)/layout.css",
       "static/chunks/app/(pages)/layout.js"
     ],
-    "/(pages)/about/page": [
+    "/(pages)/library/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/about/page.js"
-    ],
-    "/(pages)/imprint/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/imprint/page.js"
-    ],
-    "/(pages)/data/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/data/page.js"
-    ],
-    "/(pages)/tc/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/tc/page.js"
-    ],
-    "/(pages)/contact/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/contact/page.js"
-    ],
-    "/(pages)/price/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/price/page.js"
+      "static/chunks/app/(pages)/library/page.js"
     ],
     "/(pages)/help/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(pages)/help/page.js"
-    ],
-    "/(pages)/library/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/library/page.js"
     ],
     "/(auth)/layout": [
       "static/chunks/webpack.js",

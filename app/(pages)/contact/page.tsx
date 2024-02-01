@@ -1,3 +1,4 @@
+"use client";
 import * as React from "react";
 import {
   Card,
@@ -12,33 +13,49 @@ import Footer from "@/components/footer";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+async function fetchHtmlContent() {
+  const repoOwner = "idealistraj9";
+  const repoName = "b2Match-gui";
+  const filePath = "contact.html"; // Update with the actual path
 
+  const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}`;
+
+  try {
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+
+    // Use the 'content' property directly for HTML content
+    const base64Content = data.content;
+
+    // Decode base64 content
+    const htmlContent = atob(base64Content);
+
+    return htmlContent;
+  } catch (error) {
+    console.error("Error fetching HTML content:", error);
+    return null;
+  }
+}
 export default function Imprint() {
+  const [htmlContent, setHtmlContent] = React.useState("");
+
+  React.useEffect(() => {
+    // Call the fetchHtmlContent function when the component is mounted
+    const fetchData = async () => {
+      const content = await fetchHtmlContent();
+      if (content) {
+        console.log("HTML Content:", content);
+        setHtmlContent(content);
+        // Update your component state or do something with the HTML content
+      }
+    };
+
+    fetchData();
+  }, []);
   return (
     <>
-      <div className="bg-secondary p-10 pt-3 flex flex-col text-center justify-center h-full overflow-auto">
-        <span className="text-5xl mt-5 font-bold  pl-6">
-          <h1 className="bg-gradient-to-r from-green-600 via-violet-900-500 to-green-950 inline-block text-transparent bg-clip-text">
-            Contact Us
-          </h1>
-        </span>
-        <div className="bg-secondary flex justify-center items-center m-3 rounded-sm border-background mt-3 pt-0">
-          <Card className="flex w-2/4 m-5 p-10 flex-col text-left bg-secondary border-none shadow-none">
-            <CardTitle className="text-xl">Get in Touch</CardTitle>
-            <CardDescription className="text-[20px]">
-              If you have any inquiries or need assistance, please feel free to
-              contact us using the form below. We will get back to you as soon
-              as possible.
-            </CardDescription>
-            <CardTitle className="text-lg">Surname</CardTitle>
-            <Input className="text-secondary-foreground bg-card mb-5" />
-            <CardTitle className="text-lg">e-mail</CardTitle>
-            <Input className="text-secondary-foreground bg-card mb-5" />
-            <CardTitle className="text-lg">Inquiry</CardTitle>
-            <Textarea className="text-secondary-foreground bg-card mb-5" rows={5}/>
-            <Button>Submit </Button>
-            </Card>
-        </div>
+      <div className="bg-[#e0e9d2] p-10 pt-3 flex flex-col text-center justify-center h-full overflow-auto">
+      <div className=""><div  dangerouslySetInnerHTML={{ __html: htmlContent }}/></div>
         <Footer />
       </div>
     </>
